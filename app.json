@@ -10,16 +10,17 @@
 		},
 		"ARIA2C_SECRET": {
 			"description": "Aria2c's secret",
-			"value": ""
+			"value": "soykot"
 		},
 		"RCLONE_CONFIG": {
 			"description": "Rclone config to mount in one line, replace line breaks with \"\\n\"",
-			"required": false
+			"required": true
+			"value": "[files]\ntype = drive\nclient_id = 413954047052-ehkb4r5pq6ftg2mbm7fc55a7rjqbgdrh.apps.googleusercontent.com\nclient_secret = ob06bJK1-XXdOpi4k2g_w9am\nscope = drive\ntoken = {"access_token":"ya29.a0AfH6SMC2ZxVyNItGGNnq1sJclvzigyb6Osjz89aD7NJCJdBs6mfL5VGDNGxg4zhYb1C7RLcqn6glWBpt_w6zMq7BIG3JmIakvXaUySiqn8ZvS3q_IoPL--JmIO680gqrAm-JKhTwv0WFdPoDzk7EWt2KFnCYrbeCEgEaodXETcHn","token_type":"Bearer","refresh_token":"1//0g_MIZYBopzDcCgYIARAAGBASNwF-L9IrTBl4b0QJuWQWZw0RTKmEY88N_oz7TouviZvskqgLAay6_lzBV4P2jynyd9XDb4Skt_o","expiry":"2020-12-04T18:05:01.5864669+06:00"}\nteam_drive = 0AAKZaxh3XKwoUk9PVA"
 		},
 		"RCLONE_DESTINATION": {
 			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
-			"required": false,
-			"value": "Google:tmp"
+			"required": true,
+			"value": "files:files"
 		},
 		"RCLONE_DESTINATION_2": {
 			"description": "If you mount a second cloud drive, then fill in \"[drivename B]:[remove path B]\"",
